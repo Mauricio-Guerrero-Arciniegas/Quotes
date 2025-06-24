@@ -1,4 +1,10 @@
 import styles from './ButtonGroup.module.scss';
+import {
+  MessageCircle,
+  Twitter,
+  Facebook,
+  ClipboardCopy
+} from 'lucide-react';
 
 function ButtonGroup({
   onNewPhrase,
@@ -11,28 +17,31 @@ function ButtonGroup({
 }) {
   return (
     <div className={styles['button-group']}>
-      <button className={styles['button-group__main']} onClick={onNewPhrase}>
+      <button className={styles['button-group__action']} onClick={onNewPhrase}>
         New Quote
       </button>
 
-      <div className={styles['button-group__share']}>
-        <button onClick={onShareWhatsApp} aria-label="WhatsApp">
-          📱
+      <button
+        className={styles['button-group__action']}
+        onClick={onToggleFavorites}
+      >
+        {showFavorites ? 'Hide Favorites' : 'View Favorites'}
+      </button>
+
+      <div className={styles['button-group__socials']}>
+        <button onClick={onShareWhatsApp} aria-label="Share on WhatsApp">
+          <MessageCircle size={24} color="#25d366" />
         </button>
-        <button onClick={onShareTwitter} aria-label="Twitter">
-          🐦
+        <button onClick={onShareTwitter} aria-label="Share on Twitter">
+          <Twitter size={24} color="#1da1f2" />
         </button>
-        <button onClick={onShareFacebook} aria-label="Facebook">
-          📘
+        <button onClick={onShareFacebook} aria-label="Share on Facebook">
+          <Facebook size={24} color="#1877f2" />
         </button>
-        <button onClick={onCopy} aria-label="Copy">
-          📋
+        <button onClick={onCopy} aria-label="Copy to clipboard">
+          <ClipboardCopy size={24} color="#555" />
         </button>
       </div>
-
-      <button className={styles['button-group__toggle']} onClick={onToggleFavorites}>
-        {showFavorites ? 'Hide favorites' : 'View favorites'}
-      </button>
     </div>
   );
 }

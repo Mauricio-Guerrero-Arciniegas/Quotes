@@ -4,6 +4,7 @@ import styles from './App.module.scss';
 import Quotes from './components/Quotes/Quotes';
 import ButtonGroup from './components/ButtonGroup/ButtonGroup';
 
+
 const gradients = [
   'linear-gradient(135deg, rgba(255, 236, 210, 0.85), rgba(252, 182, 159, 0.85))',
   'linear-gradient(135deg, rgba(161, 196, 253, 0.85), rgba(194, 233, 251, 0.85))',
