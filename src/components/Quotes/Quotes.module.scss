@@ -1,0 +1,12 @@
+.quotes {
+  &__text {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+
+  &__author {
+    font-weight: bold;
+    color: #333;
+  }
+}

@@ -1,0 +1,21 @@
+.app {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: background-image 0.5s ease-in-out;
+
+  &__card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  }
+}
