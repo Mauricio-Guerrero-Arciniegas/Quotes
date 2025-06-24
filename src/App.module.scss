@@ -1,21 +1,93 @@
-.app {
-  min-height: 100vh;
+body {
+  background-image: url('../public/background.jpg'); 
   background-size: cover;
   background-position: center;
-  background-color: black;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  transition: background-image 0.5s ease-in-out;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-  &__card {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 1rem;
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+    &__card {
+      max-width: 600px;
+    width: 100%;
     padding: 2rem;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: background 0.5s ease;
+    }
+
+    &__fav-toggle {
+      margin-top: 1rem;
+      background: none;
+      border: none;
+      font-size: 1rem;
+      cursor: pointer;
+      color: #e63946;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__favorites-list {
+      margin-top: 1rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      border-radius: 1rem;
+      padding: 1rem;
+      max-height: 200px;
+      overflow-y: auto;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &__favorite-item {
+      margin-bottom: 1rem;
+      font-style: italic;
+
+      span {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        color: #333;
+      }
+    }
+
+    &__socials {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.8rem;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: transform 0.2s ease;
+
+      svg {
+        width: 28px;
+        height: 28px;
+        transition: fill 0.3s ease;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
   }
 }
+  
+
