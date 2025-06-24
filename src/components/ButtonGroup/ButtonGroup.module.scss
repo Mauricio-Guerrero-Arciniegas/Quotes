@@ -53,8 +53,7 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
       }
     }
-
-    // Responsive (columna en móvil)
+    
     @media (max-width: 650px) {
       flex-direction: row;
       align-items: center;
