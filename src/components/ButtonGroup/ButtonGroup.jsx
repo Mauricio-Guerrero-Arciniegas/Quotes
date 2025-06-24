@@ -18,14 +18,14 @@ function ButtonGroup({
   return (
     <div className={styles['button-group']}>
       <button className={styles['button-group__action']} onClick={onNewPhrase}>
-        New Quote
+        Nueva frase
       </button>
 
       <button
         className={styles['button-group__action']}
         onClick={onToggleFavorites}
       >
-        {showFavorites ? 'Hide Favorites' : 'View Favorites'}
+        {showFavorites ? 'Ocultar favoritas' : 'Ver favoritas'}
       </button>
 
       <div className={styles['button-group__socials']}>

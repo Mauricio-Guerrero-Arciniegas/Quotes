@@ -14,7 +14,7 @@ function Quotes({ phrase, author, onToggleFavorite, isFavorite }) {
     {isFavorite ? '❤️' : '🤍'}
   </span>
   <span className={styles['quotes__fav-text']}>
-    {isFavorite ? 'Saved' : 'To Favorites'}
+    {isFavorite ? 'Agregada' : 'Agregar a favoritas'}
   </span>
 </button>
     </div>

@@ -1,5 +1,5 @@
 body {
-  background-image: url('../public/background.jpg'); 
+  background-image: url('../public/background.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -11,64 +11,69 @@ body {
 .app {
   min-height: 100vh;
   padding: 2rem;
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
 
-    &__card {
-      max-width: 600px;
+  &__card {
+    max-width: 800px;
     width: 100%;
     padding: 2rem;
     border-radius: 1rem;
-    backdrop-filter: blur(6px);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: background 0.5s ease;
-    }
 
-    &__fav-toggle {
-      margin-top: 1rem;
-      background: none;
-      border: none;
-      font-size: 1rem;
-      cursor: pointer;
-      color: #e63946;
+    background-color: rgba(255, 255, 255, 0.08); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+
+    transition: backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__fav-toggle {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: #e63946;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__favorites-list {
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    padding: 1rem;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &__favorite-item {
+    margin-bottom: 1rem;
+    font-style: italic;
+    color: white;
+
+    span {
+      display: block;
+      text-align: right;
       font-weight: bold;
-
-      &:hover {
-        text-decoration: underline;
-      }
+      color: #eee;
     }
+  }
 
-    &__favorites-list {
-      margin-top: 1rem;
-      background-color: rgba(255, 255, 255, 0.7);
-      border-radius: 1rem;
-      padding: 1rem;
-      max-height: 200px;
-      overflow-y: auto;
-      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
-    }
-
-    &__favorite-item {
-      margin-bottom: 1rem;
-      font-style: italic;
-
-      span {
-        display: block;
-        text-align: right;
-        font-weight: bold;
-        color: #333;
-      }
-    }
-
-    &__socials {
-      margin-top: 1rem;
-      display: flex;
-      justify-content: flex-end;
-      gap: 0.8rem;
+  &__socials {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8rem;
 
     button {
       background: none;
@@ -80,7 +85,11 @@ body {
       svg {
         width: 28px;
         height: 28px;
-        transition: fill 0.3s ease;
+        transition: fill 0.3s ease, border 0.3s ease;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3); 
+        border-radius: 50%; 
+        padding: 4px;
       }
 
       &:hover {
@@ -89,5 +98,3 @@ body {
     }
   }
 }
-  
-

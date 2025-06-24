@@ -3,11 +3,12 @@
     font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 1rem;
+    color: white;
   }
 
   &__author {
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
   }
 
   &__fav-btn {
@@ -19,7 +20,7 @@
     cursor: pointer;
     font-size: 1rem;
     margin-top: 1rem;
-    color: #000000;
+    color: #ffffff;
     font-weight: bold;
     transition: transform 0.2s ease;
 
@@ -34,5 +35,6 @@
 
   &__fav-text {
     font-size: 1rem;
+    color: rgb(252, 252, 252);
   }
 }
