@@ -56,6 +56,10 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
+  &__no-favorites {
+    color: white;
+  }
+
   &__favorite-item {
     margin-bottom: 1rem;
     font-style: italic;
