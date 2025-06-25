@@ -7,14 +7,14 @@ import ButtonGroup from './components/ButtonGroup/ButtonGroup';
 import Loader from './components/Loader/Loader';
 
 function App() {
-	// Carga inicial
+	// Loader
 	const [isLoading, setIsLoading] = useState(true);
 	useEffect(() => {
 		const timer = setTimeout(() => setIsLoading(false), 3500);
 		return () => clearTimeout(timer);
 	}, []);
 
-	// Frase actual
+	// Actual Quote
 	const getRandomIndex = (length) => Math.floor(Math.random() * length);
 	const [currentPhrase, setCurrentPhrase] = useState(
 		phrases[getRandomIndex(phrases.length)],
@@ -24,7 +24,7 @@ function App() {
 		setCurrentPhrase(phrases[getRandomIndex(phrases.length)]);
 	};
 
-	// Favoritos
+	// Favorites
 	const [favorites, setFavorites] = useState(() => {
 		const stored = localStorage.getItem('favorites');
 		return stored ? JSON.parse(stored) : [];
@@ -45,7 +45,7 @@ function App() {
 	const [showFavorites, setShowFavorites] = useState(false);
 	const handleToggleFavorites = () => setShowFavorites((prev) => !prev);
 
-	// Funciones de compartir y copiar
+	// Share social icons
 	const getEncodedMessage = () =>
 		encodeURIComponent(`"${currentPhrase.phrase}" - ${currentPhrase.author}`);
 
