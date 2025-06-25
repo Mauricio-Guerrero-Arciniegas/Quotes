@@ -1,13 +1,30 @@
-# React + Vite
+# 💬 Random Quote App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación web desarrollada con **React** que muestra frases aleatorias acompañadas del autor. Puedes marcar tus frases favoritas, compartirlas por redes sociales y disfrutar de un diseño moderno con **glassmorphism** y animaciones suaves con **Framer Motion**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite
+- Sass con metodología BEM
+- Framer Motion
+- localStorage
+- Netlify
 
-## Expanding the ESLint configuration
+## 🌟 Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# Quotes
+- Genera frases aleatorias desde un archivo .json.
+- Guarda y visualiza tus favoritas.
+- Comparte frases por WhatsApp, Twitter o Facebook.
+- Animaciones suaves y diseño moderno.
+- Diseño responsive adaptable a móviles
+- Responsive y amigable para dispositivos móviles.
+- Loader personalizado SVG con animación de “montañas”
+
+## 📸 Captura
+
+![screenshot](./public/screenshot.png)
+
+## 🧠 Autor
+
+Mauricio Guerrero  
+[Portafolio](https://quotes-app-glass.netlify.app/)
