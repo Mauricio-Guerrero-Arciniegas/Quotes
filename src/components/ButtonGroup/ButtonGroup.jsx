@@ -39,7 +39,7 @@ function ButtonGroup({
           <Facebook size={24} color="#1877f2" />
         </button>
         <button onClick={onCopy} aria-label="Copy to clipboard">
-          <ClipboardCopy size={24} color="#555" />
+          <ClipboardCopy size={24} color="#9b9b9b" />
         </button>
       </div>
     </div>

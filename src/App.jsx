@@ -72,7 +72,7 @@ function App() {
 	const handleCopyToClipboard = () => {
 		const message = `"${currentPhrase.phrase}" - ${currentPhrase.author}`;
 		navigator.clipboard.writeText(message);
-		alert('Copied to clipboard!');
+		alert('Copiado en Portapapeles !');
 	};
 
 	return (
